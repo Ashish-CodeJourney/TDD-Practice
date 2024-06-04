@@ -18,4 +18,11 @@ public class CalculatorTest {
         int result = calculator.sub(20,5);
         assertEquals(15, result, "20 - 5 should equal 15");
     }
+
+    @Test
+    void testMul() {
+        Calculator calculator = new Calculator();
+        int result = calculator.mul(8, 6);
+        assertEquals(48, result, "8 * 6 should eqal 48");
+    }
 }
