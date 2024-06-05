@@ -15,33 +15,22 @@ public class MainCalculator {
 
         int choice = scanner.nextInt();
 
+        System.out.println("Enter first number:");
+        double num1 = scanner.nextDouble();
+        System.out.println("Enter second number:");
+        double num2 = scanner.nextDouble();
+
         switch (choice) {
             case 1:
-                System.out.println("Enter first number:");
-                double num1 = scanner.nextDouble();
-                System.out.println("Enter second number:");
-                double num2 = scanner.nextDouble();
                 System.out.println("Result: " + (num1 + num2));
                 break;
             case 2:
-                System.out.println("Enter first number:");
-                num1 = scanner.nextDouble();
-                System.out.println("Enter second number:");
-                num2 = scanner.nextDouble();
                 System.out.println("Result: " + (num1 - num2));
                 break;
             case 3:
-                System.out.println("Enter first number:");
-                num1 = scanner.nextDouble();
-                System.out.println("Enter second number:");
-                num2 = scanner.nextDouble();
                 System.out.println("Result: " + (num1 * num2));
                 break;
             case 4:
-                System.out.println("Enter first number:");
-                num1 = scanner.nextDouble();
-                System.out.println("Enter second number:");
-                num2 = scanner.nextDouble();
                 if (num2 != 0) {
                     System.out.println("Result: " + (num1 / num2));
                 } else {
