@@ -23,6 +23,13 @@ public class CalculatorTest {
     void testMul() {
         Calculator calculator = new Calculator();
         int result = calculator.mul(8, 6);
-        assertEquals(48, result, "8 * 6 should eqal 48");
+        assertEquals(48, result, "8 * 6 should equal 48");
+    }
+
+    @Test
+    void testDiv() {
+        Calculator calculator = new Calculator();
+        int result = calculator.div(100,10);
+        assertEquals(10, result,"100 / 10 sould equal 10");
     }
 }
