@@ -15,6 +15,12 @@ public class MainCalculator {
 
         int choice = scanner.nextInt();
 
+        if (choice == 0) {
+            System.out.println("Exiting the program.");
+            scanner.close();
+            System.exit(0);
+        }
+
         System.out.println("Enter first number:");
         double num1 = scanner.nextDouble();
         System.out.println("Enter second number:");
