@@ -13,4 +13,12 @@ class FizzBuzzTest {
         assertEquals("Fizz", fizzbuzz.play(6));
         assertEquals("Fizz", fizzbuzz.play(9));
     }
+
+    @Test
+    void testBuzz(){
+        var fizzbuzz = new FizzBuzz();
+        assertEquals("Buzz", fizzbuzz.play(5));
+        assertEquals("Buzz", fizzbuzz.play(10));
+        assertEquals("Buzz", fizzbuzz.play(20));
+    }
 }
