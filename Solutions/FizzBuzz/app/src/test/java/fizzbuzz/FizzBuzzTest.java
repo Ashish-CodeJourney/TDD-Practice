@@ -32,4 +32,14 @@ class FizzBuzzTest {
         assertEquals("FizzBuzz", fizzbuzz.play(75));
         assertEquals("FizzBuzz", fizzbuzz.play(90));
     }
+
+
+    @Test
+    void TestOtherNumber(){
+        var fizzbuzz = new FizzBuzz();
+        assertEquals("You are out", fizzbuzz.play(1));
+        assertEquals("You are out", fizzbuzz.play(2));
+        assertEquals("You are out", fizzbuzz.play(8));
+        // and other numbers which we can not divide by 3 or 5
+    }
 }
