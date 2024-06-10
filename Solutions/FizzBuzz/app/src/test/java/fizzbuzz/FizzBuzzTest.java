@@ -8,7 +8,7 @@ class FizzBuzzTest {
 
     @Test
     void testFizz(){
-        var fizzbuzz = new FizzBuzz();
+        FizzBuzz fizzbuzz = new FizzBuzz();
         assertEquals("Fizz", fizzbuzz.play(3));
         assertEquals("Fizz", fizzbuzz.play(6));
         assertEquals("Fizz", fizzbuzz.play(9));
@@ -16,7 +16,7 @@ class FizzBuzzTest {
 
     @Test
     void testBuzz(){
-        var fizzbuzz = new FizzBuzz();
+        FizzBuzz fizzbuzz = new FizzBuzz();
         assertEquals("Buzz", fizzbuzz.play(5));
         assertEquals("Buzz", fizzbuzz.play(10));
         assertEquals("Buzz", fizzbuzz.play(20));
@@ -24,7 +24,7 @@ class FizzBuzzTest {
 
     @Test
     void testFizzBuzz(){
-        var fizzbuzz = new FizzBuzz();
+        FizzBuzz fizzbuzz = new FizzBuzz();
         assertEquals("FizzBuzz", fizzbuzz.play(15));
         assertEquals("FizzBuzz", fizzbuzz.play(30));
         assertEquals("FizzBuzz", fizzbuzz.play(45));
@@ -36,7 +36,7 @@ class FizzBuzzTest {
 
     @Test
     void TestOtherNumber(){
-        var fizzbuzz = new FizzBuzz();
+        FizzBuzz fizzbuzz = new FizzBuzz();
         assertEquals("You are out", fizzbuzz.play(1));
         assertEquals("You are out", fizzbuzz.play(2));
         assertEquals("You are out", fizzbuzz.play(8));
