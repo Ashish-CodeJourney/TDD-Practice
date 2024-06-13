@@ -3,13 +3,19 @@
  */
 package leap.year;
 
+import java.util.Scanner;
+
 public class App {
 
-    public String getGreeting() {
-        return "Hello World!";
-    }
-
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        LeapYear leapyear = new LeapYear();
+
+        int year = 0;
+
+        System.out.println("Enter a Year :");
+        Scanner sc = new Scanner(System.in);
+        year = sc.nextInt();
+
+        System.out.println(leapyear.isLeapYear(year));
     }
 }
