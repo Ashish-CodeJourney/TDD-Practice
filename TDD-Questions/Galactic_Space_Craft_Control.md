@@ -36,7 +36,7 @@ Commands: `["f", "r", "u", "b", "l"]`
 5. `"l"` - (0, 1, -1) - N
 
 - Final Position: (0, 1, -1)
-- Final Direction: N
+- Final Direction: U
 
 #### Your task is to design the program that enables Chandrayaan 3 to execute these commands accurately and efficiently in the vast expanse of the galaxy:
 
