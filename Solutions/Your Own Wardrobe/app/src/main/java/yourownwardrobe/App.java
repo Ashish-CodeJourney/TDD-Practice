@@ -3,12 +3,30 @@
  */
 package yourownwardrobe;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import java.util.List;
+import java.util.Scanner;
 
+public class App {
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        YourOwnWardrobe wardrobe = new YourOwnWardrobe();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the total length of the wall (in cm): ");
+        int targetLength = scanner.nextInt();
+
+        // Find all combinations
+        List<List<Integer>> combinations = wardrobe.findCombinations(targetLength);
+
+        System.out.println("All possible combinations that add up to " + targetLength + " cm:");
+        for (List<Integer> combination : combinations) {
+            System.out.println(combination + " -> Cost: " + wardrobe.calculateCost(combination) + " USD");
+        }
+
+        // Find the cheapest combination
+        List<Integer> cheapestCombination = wardrobe.findCheapestCombination(combinations);
+        int cheapestCost = wardrobe.calculateCost(cheapestCombination);
+
+        System.out.println("\nCheapest combination: " + cheapestCombination);
+        System.out.println("Cheapest cost: " + cheapestCost + " USD");
     }
 }
