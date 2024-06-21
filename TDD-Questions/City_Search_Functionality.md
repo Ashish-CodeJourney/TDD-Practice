@@ -1,8 +1,5 @@
 # City Search Functionality
 
-## Overview
-This document outlines the implementation of a city search functionality. The function takes a string (search text) as input and returns the cities that match the search criteria.
-
 ## Prerequisites
 Create a collection of strings that will act as a database for the city names:
 
