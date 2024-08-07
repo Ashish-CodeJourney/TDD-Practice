@@ -8,7 +8,7 @@ public class ChandrayaanTest {
 
     @Test
     void testMoveForwardFromNorth () {
-        Chandrayaan spacecraft = new Chandrayaan();
+        Chandrayaan spacecraft = new Chandrayaan(0, 0, 0, "N");
         spacecraft.executeCommand('f');
         assertEquals(0, spacecraft.getX());
         assertEquals(1, spacecraft.getY());
