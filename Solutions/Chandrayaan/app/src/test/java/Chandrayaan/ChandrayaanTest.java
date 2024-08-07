@@ -6,5 +6,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ChandrayaanTest {
 
-
+    @Test
+    void testMoveForwardFromNorth () {
+        Chandrayaan spacecraft = new Chandrayaan();
+        spacecraft.executeCommand('f');
+        assertEquals(0, spacecraft.getX());
+        assertEquals(1, spacecraft.getY());
+        assertEquals(0, spacecraft.getZ());
+        assertEquals("N", spacecraft.getDirection());
+    }
 }
