@@ -15,10 +15,13 @@ public class Chandrayaan {
     }
 
     public void executeCommand(char command) {
-        if (command == 'f') {
-            if (direction.equals("N")) {
+        switch (direction) {
+            case "N":
                 y += 1;
-            }
+                break;
+            case "E":
+                x += 1;
+                break;
         }
     }
 
