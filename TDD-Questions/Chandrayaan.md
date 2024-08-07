@@ -69,3 +69,13 @@ To develop this program using Test-Driven Development (TDD), follow these steps:
     - Add tests to cover edge cases and ensure the code handles all scenarios correctly.
 
 By following these steps, you will develop a robust and well-tested program for controlling the Chandrayaan 3 lunar spacecraft using TDD principles.
+
+## Question curated by
+
+- [2KAbhishek](https://github.com/2KAbhishek)
+- [niravchavda99](https://github.com/niravchavda99) 
+
+## Find the blog here
+- [Chandrayaan 3 TDD Assessment](https://blog.incubyte.co/blog/chandrayaan-3-tdd-assessment/) 
+
+
