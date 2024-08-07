@@ -26,4 +26,14 @@ public class ChandrayaanTest {
         assertEquals("E", spacecraft.getDirection());
     }
 
+    @Test
+    public void testMoveBackwardFromNorth() {
+        Chandrayaan spacecraft = new Chandrayaan(0, 1, 0, "N");
+        spacecraft.executeCommand('b');
+        assertEquals(0, spacecraft.getX());
+        assertEquals(0, spacecraft.getY());
+        assertEquals(0, spacecraft.getZ());
+        assertEquals("N", spacecraft.getDirection());
+}
+
 }
