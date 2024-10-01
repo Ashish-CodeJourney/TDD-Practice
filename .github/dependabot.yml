@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "gradle" # Specify the Gradle package ecosystem
+    directory: "/"               # Location of your build.gradle file
+    schedule:
+      interval: "daily"         # Check for updates weekly
