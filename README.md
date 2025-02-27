@@ -37,6 +37,13 @@ Welcome to the TDD learning module! This guide will help you understand the basi
      testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
      ```
 
+   - If you're using Gradle.kts, add the following to your `build.gradle`:
+     ```groovy
+     testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.0")
+     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.0")
+     ```
+     
+
 4. **Create Your Test Class**:
    - Write your test cases using JUnit 5 annotations (`@Test`, `@BeforeEach`, etc.) in the `src/test` folder.
    - Ensure each test method tests a specific behavior of your code.
