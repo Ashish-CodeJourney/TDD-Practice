@@ -72,7 +72,7 @@ By following these steps, you will develop a robust and well-tested program for 
 
 ## Question curated by
 
-- [2KAbhishek](https://github.com/2KAbhishek)
+- [niravchavda99](https://github.com/niravchavda99)
 - [ajinzrathod](https://github.com/ajinzrathod) 
 
 ## Find the blog here
